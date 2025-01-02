@@ -38,7 +38,7 @@ Devise.setup do |config|
     ]
 
     # jwt.expiration_time = 30.minutes.to_i
-    # jwt.expiration_time = 1.day.to_i
+    jwt.expiration_time = 1.day.to_i
   end
 
   # Configure the class responsible to send e-mails.
