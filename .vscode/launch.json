@@ -1,0 +1,29 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            //Start Rails server
+            "name": "Debug Rails",
+            "type": "rdbg",
+            "request": "launch",
+            // "command": "bundle exec rails", #bundle exec rails won't stop in the debugger
+            "command": "bin/rails",
+            "script": "server",
+            "args": ["-b","0.0.0.0"],
+        },
+        {
+            // Run tests on the active rspec file
+            "name": "Debug Rspec with current file",
+            "type": "rdbg",
+            "request": "launch",
+            "command": "bundle exec rspec",
+            "script": "${file}",
+            "args": [],
+            // Confirm the executed command in the window. Make it easy to specify options such as execution of 
+            "askParameters": true
+        },
+    ],
+}
