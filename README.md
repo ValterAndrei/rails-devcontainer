@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicação Rails com DevContainer e Autenticação JWT usando Devise.
 
 
 ---
@@ -19,7 +18,7 @@ curl --include --request POST \
   --header 'Content-Type: application/json' \
   --data '{
 	"user": {
-		"email": "valter.sandoval@caiena.net",
+		"email": "same@email.com",
 		"password": "Senha@123"
 	}
 }'
@@ -36,7 +35,7 @@ curl --include --request POST \
   --header 'Content-Type: application/json' \
   --data '{
 	"user": {
-		"email": "valter.sandoval@caiena.net",
+		"email": "same@email.com",
 		"password": "Senha@123"
 	}
 }'
