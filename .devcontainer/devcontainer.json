@@ -67,8 +67,12 @@
         "Shopify.ruby-lsp",
         "marcoroth.stimulus-lsp",
         "shardulm94.trailing-spaces",
-        "KoichiSasada.vscode-rdbg"
+        "KoichiSasada.vscode-rdbg",
+        "eamodio.gitlens"
       ]
     }
-  }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ]
 }
