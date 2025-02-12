@@ -43,7 +43,7 @@ RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 
 # Final stage for app image
-FROM base
+FROM base as final
 
 # Clean up installation packages to reduce image size
 RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives
